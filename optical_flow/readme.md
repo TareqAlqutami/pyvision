@@ -35,7 +35,7 @@ python sparse.py --video_src <video source>
 
 ### Dense optical flow
 all the code related to sparse optical flow is in `dense.py`. It can be run using:
-```
+```bash
 python dense.py --algorithm <algorithm> --video_src <video source>
 ```
 - `video_src` (optional): points to the video source, defaults to camera 0 if not specified. It accepts any source supported by opencv VideoCapture.
@@ -48,7 +48,7 @@ python dense.py --algorithm <algorithm> --video_src <video source>
 A more practical implementation of Lucas-Kanade sparse optical flow with tracking.
 It uses goodFeaturesToTrack for track initialization and back-tracking for match verification
 between frames. Run using:
-```
+```bash
 python sparse_track.py --video_src <video source>
 ```
 - `video_src` (optional): points to the video source, defaults to camera 0 if not specified. It accepts any source supported by opencv VideoCapture.
@@ -56,18 +56,18 @@ python sparse_track.py --video_src <video source>
 
 # Screenshots
 Running using the video demo demo.mp4
-```
+``` bash
 python dense.py --algorithm lucas-kanade  --video_src ..\demo.mp4
 ```
 - To on/off HSV visualization press 1
 - To exit press esc
 
 **Dense Lucas-kanade** 
-![lk_dense](screenshots\lk_dense.png)
+![lk_dense](screenshots/lk_dense.png)
 
 
 **Sparse Lucas-Kanade with Tracking**
-![lk_track](screenshots\lk_track.png)
+![lk_track](screenshots/lk_track.png)
 
 ## References
 - https://docs.opencv.org/4.x/d4/dee/tutorial_optical_flow.html
